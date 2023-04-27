@@ -1,0 +1,114 @@
+.container {
+    background-image: url(/images/lofi2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.loginContainer {
+    margin: 120px auto;
+    border-radius: 30px;
+    position: relative;
+    background-color: #222;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loginContainer h2 {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color: #eabd7d;
+    padding: 20px 0;
+}
+
+.loginContainer p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: .75em;
+}
+
+#login {
+    margin: -15px 0 20px 0;
+    font-size: 1em
+}
+
+.loginContainer input {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 7px 10px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    border: 1px solid #eabd7d;
+    outline: none;
+}
+
+#email::-webkit-input-placeholder {
+    font-family: 'Kanit', sans-serif;
+    font-size: .9em;
+}
+
+#password::-webkit-input-placeholder {
+    font-family: 'Kanit', sans-serif;
+    font-size: .9em;
+}
+
+.loginContainer button {
+    display: block;
+    margin: 15px auto 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #eabd7d;
+    color: #222;
+    font-family: inherit;
+}
+
+.loginContainer button:hover {
+    cursor: pointer;
+    background-color: #ecc48c;
+}
+
+.loginContainer a {
+    text-decoration: none;
+    margin-left: 3px;
+    color: beige;
+}
+
+#passwordContainer {
+    position: relative;
+}
+
+#showPass {
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    z-index: 1;
+    width: 20px;
+}
+
+#showPass:hover {
+    cursor: pointer;
+}
+
+.errorMsg {
+    color: red;
+    text-align: right;
+    font-size: 10px;
+}
+
+.errorMsg.hidden {
+    display: none;
+}
+
+.errorMsg::before {
+    content: "\002a";
+}
+

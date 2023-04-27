@@ -1,0 +1,157 @@
+body {
+    background: #333;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+.navContainer {
+    height: 750px;
+    width: 75px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+nav ul {
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #eabd7d;
+    text-decoration: none;
+}
+
+.icon {
+    width: 25px;
+    padding: 15px 0;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+/* main section */
+main {
+    font-size: 1.25em;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main p {
+    font-size: .75em;
+    font-weight: 300;
+}
+
+.songContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.songComponent {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #222;
+    margin: 10px;
+}
+
+.songCover {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.songComponent h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.songComponent audio {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.lightbox {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.lightbox .songComponent {
+    width: auto;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.lightbox .songCover {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.lightbox img{
+    max-width: 90%;
+    max-height: 60%;
+}
+
+.lightbox h5, .lightbox p {
+    color: #fff;
+}
+
+.lightbox audio {
+    width: 90%;
+}
+
+
+
+
+
+    
+
+
+/* footer */
+.footer {
+    color: #fff;
+    font-size: .5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#logout {
+    color: #fff;
+    font-size: .8em;
+    font-weight: 300;
+    text-decoration: none;
+}
+
